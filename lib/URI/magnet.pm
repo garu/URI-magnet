@@ -6,13 +6,6 @@ use parent qw( URI::_generic URI::QueryParam );
 
 our $VERSION = 0.01;
 
-sub _init {
-  my ($class, $uri, $scheme) = @_;
-  my $self = $class->SUPER::_init($uri, $scheme);
-
-  return $self;
-}
-
 sub tr {
   my $self = shift;
   my @tr = map { URI->new($_) } $self->query_param('tr');

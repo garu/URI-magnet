@@ -4,7 +4,7 @@ use strict;
 
 use parent qw( URI::_generic URI::QueryParam );
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub tr {
   my $self = shift;
